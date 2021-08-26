@@ -7,4 +7,9 @@ router.post('/products', productController.createProduct);
 //==> ROTA GET - Lista todos os produtos na rota api products
 router.get('/products', productController.listAllProducts);
 
+//==> ROTA GET - Lista produtos por id na rota api products:id
+router.get('/products/:id', productController.findProductById);
+
+
+
 module.exports = router;

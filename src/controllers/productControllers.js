@@ -14,3 +14,16 @@ exports.createProduct = async (req, res) => {
     },
   });
 };
+exports.listAllProducts = async (req, res)=>{
+  const response = await db.query(
+    "SELECT * FROM products ORDER BY productname ASC");
+  res.status(200).send(response.rows);
+
+};
+
+exports.findProductById = async (req,res)=>{
+  const productId = parseInt(req.params.id);
+    console.log(productId);
+  const response = await db.query("SELECT * FROM products WHERE productid = $1",[productId]);
+  res.status(200).send(response.rows);
+}
