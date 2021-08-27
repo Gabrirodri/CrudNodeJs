@@ -9,7 +9,7 @@
 - [X] Criar Rota GET - Retornar todos os produtos
 - [X] Criar Rota GET - Retornar produtos por ID
 - [X] Criar Rota PUT - Atualizar produtos por ID
-- [ ] Criar Rota DELETE - deletar produtos do banco de dados por ID
+- [X] Criar Rota DELETE - deletar produtos do banco de dados por ID
 - [ ] Tratamento de Exceções
 
 ### Requisitos
