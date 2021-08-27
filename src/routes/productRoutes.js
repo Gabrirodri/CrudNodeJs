@@ -13,4 +13,7 @@ router.get('/products/:id', productController.findProductById);
 //==> ROTA PUT - Atualiza produtos por id na rota api products:id
 router.put('/products/:id', productController.updateProductById);
 
+//==> ROTA DELETE - Deleta produtos por id na rota api products:id
+router.delete('/products/:id', productController.deleteProductById);
+
 module.exports = router;
