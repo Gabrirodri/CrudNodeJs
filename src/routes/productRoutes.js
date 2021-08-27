@@ -10,6 +10,7 @@ router.get('/products', productController.listAllProducts);
 //==> ROTA GET - Lista produtos por id na rota api products:id
 router.get('/products/:id', productController.findProductById);
 
-
+//==> ROTA PUT - Atualiza produtos por id na rota api products:id
+router.put('/products/:id', productController.updateProductById);
 
 module.exports = router;
